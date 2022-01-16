@@ -1,0 +1,108 @@
+body{
+    background-color: rgb(19, 129, 231);
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+}
+ul{
+    display: block;
+}
+.panelpricing-table{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+    border-radius: 1%;
+    max-width: 50%;
+
+    background-color: white;
+    -webkit-box-shadow: 0 10px 6px -6px #777;
+    -moz-box-shadow: 0 10px 6px -6px #777;
+         box-shadow: 0 10px 6px -6px #777;
+         flex-basis: auto;
+         
+}
+img{
+    width: 198.4px;
+    margin: 0px;
+    align-self: center;
+}
+.pricing-plan{
+    display: flex;
+    flex-direction: column;
+   
+   justify-content: space-between;
+   margin: 20px 10px;
+   width:300px;
+   border-right: 1px solid #e1f1ff;
+}
+.pricing-plan:last-child{
+    border-right: none;
+
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+
+}
+h2{
+    text-align: center;
+    color: gray;
+    text-transform: uppercase;
+    font: 1.35em sans-serif;
+    padding: 0%;
+    margin: 0%;
+    font-weight: bolder;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    letter-spacing: 2px;
+    
+}
+ul li{
+    text-align: center;
+    font-weight: bold;
+    color: #016ff9;
+    font-size: 0.85em;
+    padding-top:5px ;
+    margin: 6px 6px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1f1ff;
+   
+}
+.pricing-price{
+    text-align: center;
+    font-weight: bolder;
+    color: rgb(40, 109, 236);
+    font-size: 30px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #e1f1ff;
+}
+ 
+
+.pricing-button{
+    text-align: center;
+    text-decoration: none;
+    border:1px solid #9dd1ff;
+    border-radius: 20px;
+    margin: 30px 30px;
+    padding: 20px 0px;
+    color: #348efe;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+.pricing-button:hover{
+    background-color: #e1f1ff;
+    transition: 500ms ease-in-out;
+}
+@media (max-width:1305px){
+    .panelpricing-table{flex-direction: column;}
+    body{justify-content: flex-start;}
+    .panelpricing-table{max-height: fit-content;
+        flex-basis: fit-content;
+    flex-shrink: 2; }
+}
+
